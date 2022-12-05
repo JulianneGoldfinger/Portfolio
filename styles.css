@@ -4,15 +4,37 @@ body {
 }
 
 .main {
-    margin-top: 4rem;
+    padding-top: 4rem;
     padding-right: 1.5rem;
+    position: relative;
 }
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
 .sidebar{
     height: 100%;
     color: white;
     background-color: rgb(2, 54, 71);
     text-align: center;
     padding: 0.5rem;
+    position: relative;
+}
+
+.social-links{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    position: absolute;
+    bottom: 1rem;
 }
 
 .container-row{
@@ -61,9 +83,44 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    z-index: 2;
+    position: relative;
 }
 
 .bio-text {
     margin: 2rem;
+    z-index: 2;
+    position: relative;
+    font-family: Copperplate;
 }
-    
+
+.card {
+    z-index: 2;
+    position: relative;
+}
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    text-decoration: none;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+
+  .fa-envelope {
+    background-color: transparent;
+    border: 1px solid #007bb5;
+    color: white;
+    text-decoration: none;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  
